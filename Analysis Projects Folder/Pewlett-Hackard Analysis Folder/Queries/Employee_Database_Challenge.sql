@@ -49,7 +49,7 @@ inner join department_employees as d
 on (e.emp_no = d.emp_no)
 inner join titles as t
 on (e.emp_no = t.emp_no)
-where (e.birth_date between '1965-01-01' and '1965-12-31')
+where (e.birth_date between '1965-01-01' and '1965-12-31') and (t.to_date = '9999-01-01')
 order by e.emp_no;
 
 
